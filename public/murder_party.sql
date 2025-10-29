@@ -170,7 +170,7 @@ CREATE TABLE `suspicions` (
   `suspect_type` enum('guest','employee') DEFAULT NULL,
   `suspect_id` int(11) DEFAULT NULL,
   `reason` varchar(255) DEFAULT NULL,
-  `level_of_suspicion` tinyint(4) DEFAULT NULL CHECK (`level_of_suspicion` between 0 and 5)
+  `level_of_suspicion` tinyint(4) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
